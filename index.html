@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dean Mark</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <nav>
+      <h1 class="h1-hl">Dean Mark ()</h1>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Items -->
+      <div class="nav-container">
+        <a href="#" class="nav-items"><li>Home</li></a>
+        <a href="#" class="nav-items"><li>About</li></a>
+        <a href="#" class="nav-items"><li>Portfolio</li></a>
+        <a href="#" class="nav-items"><li>Contact</li></a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="left-container">
+        <div class="container-1">
+          <p class="txt-1">Frontend Developer</p>
+          <p class="txt-2">University Of Eastern Pangasinan</p>
+          <p class="txt-3">
+            Learning, building, and improving through real-world projects.
+          </p>
+        </div>
+
+        <div class="pl-icon">
+          <p class="pl-txt">Javascript</p>
+          <p class="pl-txt2">Python</p>
+          <p class="pl-txt3">C#</p>
+        </div>
+
+        <div class="container-2">
+          <button class="btnProjects">
+            Projects <img src="image/project.png" width="20px" />
+          </button>
+        </div>
+
+        <div class="soc-icon">
+          <div class="images">
+            <a href="#"><img class="soc-med" src="image/facebook.png" /></a>
+            <a href="#"><img class="soc-med" src="image/instagram.png" /></a>
+            <a href="#"><img class="soc-med" src="image/youtube.png" /></a>
+            <a href="#"><img class="soc-med" src="image/linkedin.png" /></a>
+            <a href="#"><img class="soc-med" src="image/tiktok.png" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <img class="me-pic" src="image/me.jpg" alt="me" />
+      </div>
+    </main>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-container").classList.toggle("active");
+      }
+
+      const nav = document.querySelector(".nav-items");
+
+      const items = () => {
+        alert("In progress!");
+      };
+
+      if (nav) {
+        items();
+      }
+    </script>
+  </body>
+</html>
