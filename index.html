@@ -10,23 +10,23 @@
     <nav>
       <h1 class="h1-hl">Dean Mark ()</h1>
 
-      <!-- Hamburger Menu -->
       <div class="hamburger" onclick="toggleMenu()">
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      <!-- Navigation Items -->
       <div class="nav-container">
-        <a href="#" class="nav-items"><li>Home</li></a>
-        <a href="#" class="nav-items"><li>About</li></a>
-        <a href="#" class="nav-items"><li>Portfolio</li></a>
-        <a href="#" class="nav-items"><li>Contact</li></a>
+        <a href="#home" class="nav-items"><li>Home</li></a>
+        <a href="#about" class="nav-items"><li>About</li></a>
+        <a href="#portfolio" class="nav-items"><li>Portfolio</li></a>
+        <a href="#contact" class="nav-items"><li>Contact</li></a>
       </div>
     </nav>
 
-    <main>
+    <!-- HOME SECTION -->
+
+    <main id="home">
       <div class="left-container">
         <div class="container-1">
           <p class="txt-1">Frontend Developer</p>
@@ -64,20 +64,171 @@
       </div>
     </main>
 
-    <script>
-      function toggleMenu() {
-        document.querySelector(".nav-container").classList.toggle("active");
-      }
+    <!-- ABOUT SECTION -->
 
-      const nav = document.querySelector(".nav-items");
+    <div id="about">
+      <div class="about-main">
+        <p class="abt-head">About me</p>
+        <div class="abt-text">
+          <p class="abt-txt1">
+            Currently pursuing my Bachelor's in Information Technology at <br />
+            University of Eastern Pangasinan. I'm diving deep into areas like
+            <br />
+            web development, Game Development, and database management, while
+            <br />
+            honing my skills in technologies like JavaScript, Python, C#.
+          </p>
+          <br />
+          <p class="abt-txt2">
+            When I'm not coding, you can find me in my social media accounts,
+            <br />
+            watching videos, gaming and photography. I believe a balanced life
+            <br />
+            fuels creativity and problem-solving.
+          </p>
+        </div>
 
-      const items = () => {
-        alert("In progress!");
-      };
+        <div class="abt-do">
+          <p class="abt-header-text">What i'm doing</p>
+          <div class="web-dev">
+            <img
+              src="https://img.icons8.com/?size=100&id=sXm12ie1GUjg&format=png&color=000000"
+              alt="web dev"
+            />
+            <p class="web-dev-txt">
+              Building responsive, user-friendly interfaces <br />
+              and easy to use websites. Currently <br />
+              working with the javascript and exploring <br />
+              modern frameworks like tailwind.
+            </p>
+          </div>
 
-      if (nav) {
-        items();
-      }
-    </script>
+          <div class="game-dev">
+            <img
+              src="https://img.icons8.com/?size=100&id=VHHpi4y70rAB&format=png&color=000000"
+              alt="game dev"
+            />
+            <p class="game-dev-txt">
+              Currently studying and creating interactive <br />
+              2D experiences and game mechanics in Unity. <br />
+              Focusing on clean architecture, player <br />
+              feedback systems, and lightweight storytelling.
+            </p>
+          </div>
+
+          <div class="gaming">
+            <img
+              src="https://img.icons8.com/?size=100&id=gp2EGUQ15At9&format=png&color=000000"
+              alt="gaming"
+            />
+            <p class="gaming-txt">
+              An avid gamer passionate about game mechanics, <br />
+              player experience, and the intersection of <br />
+              storytelling and interaction.
+            </p>
+          </div>
+
+          <div class="photo">
+            <img
+              src="https://img.icons8.com/?size=100&id=25gFbkilBX00&format=png&color=000000"
+              alt="photography"
+            />
+            <p class="photo-txt">
+              Capturing moments and sceneries through a lens, <br />
+              both in code and in life. I enjoy <br />
+              taking pictures of sunsets, skies and moon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div id="contact">
+      <div class="contact-main">
+        <p class="contact-head">Get In Touch</p>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <img
+                src="https://img.icons8.com/?size=100&id=pJJmXPomYuPv&format=png&color=000000"
+                alt="Email"
+              />
+              <div>
+                <h3>Email</h3>
+                <p class="contact-detail">deansy0718@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <img
+                src="https://img.icons8.com/?size=100&id=jShwZ2RCyPSO&format=png&color=000000"
+                alt="Phone"
+              />
+              <div>
+                <h3>Phone</h3>
+                <p class="contact-detail">+63 916 474 0503</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <img
+                src="https://img.icons8.com/?size=100&id=YyEbAVyRYrMX&format=png&color=000000"
+                alt="Location"
+              />
+              <div>
+                <h3>Location</h3>
+                <p class="contact-detail">Pangasinan, Philippines</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <img src="image/linkedin.png" alt="LinkedIn" />
+              <div>
+                <h3>LinkedIn</h3>
+                <p class="contact-detail">linkedin.com/in/deanmark</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <img
+                src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                alt="GitHub"
+              />
+              <div>
+                <h3>GitHub</h3>
+                <p class="contact-detail">github.com/deanmrk</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send me a message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Subject" required />
+              </div>
+              <div class="form-group">
+                <textarea
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
